@@ -9,6 +9,6 @@
     "harp": "^0.27.0"
   },
   "scripts": {
-    "build": "harp compile ./ public"
+    "build": "rm -rf public && mkdir public && harp compile src public"
   }
 }
