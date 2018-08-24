@@ -123,7 +123,8 @@
   color: #004c53;
   font-size: 18px;
   letter-spacing: 0.1em;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  padding-top: 0.5em; }
 
 .accommodation__details {
   font-family: 'Champagne Limousines', sans-serif;
@@ -143,6 +144,39 @@
   border-bottom: 2px solid;
   cursor: pointer; }
 
+.transport__heading {
+  font-family: 'Big John', sans-serif;
+  color: #5f3e40;
+  font-size: 42px;
+  letter-spacing: 0.1em;
+  margin-bottom: 0; }
+
+.transport__heading--small {
+  font-family: 'Big John', sans-serif;
+  color: #5f3e40;
+  font-size: 18px;
+  letter-spacing: 0.1em;
+  margin-bottom: 0;
+  padding-top: 0.5em; }
+
+.transport__details {
+  font-family: 'Champagne Limousines', sans-serif;
+  color: #005064;
+  font-size: 18px;
+  margin-top: 0; }
+
+.transport__link {
+  font-family: 'Champagne Limousines', sans-serif;
+  color: #004c53;
+  text-decoration: none;
+  font-size: 16px;
+  margin-top: 0;
+  border-bottom: 2px dashed; }
+
+.transport__link:hover {
+  border-bottom: 2px solid;
+  cursor: pointer; }
+
 .visually-hidden {
   position: absolute !important;
   height: 1px;
@@ -159,14 +193,16 @@ body {
 
 .intro,
 .rsvp,
-.accommodation {
+.accommodation,
+.transport {
   display: flex;
   flex-direction: row;
   flex-flow: wrap;
   width: 100%;
   min-height: 100vh; }
 
-.intro {
+.intro,
+.transport {
   background: #fcdee0; }
 
 .rsvp {
@@ -176,6 +212,10 @@ body {
 
 .accommodation {
   background: #94a1a6;
+  align-items: center;
+  justify-content: center; }
+
+.transport {
   align-items: center;
   justify-content: center; }
 
@@ -238,10 +278,11 @@ body {
   font-size: 60px;
   position: absolute;
   right: 40px;
-  top: 30px;
+  top: 10px;
   width: 220px;
   line-height: 0.9;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  margin-top: 10px; }
 
 .intro__heading--quick {
   display: inline-block;

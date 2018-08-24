@@ -2,6 +2,7 @@
 @import 'fonts';
 @import 'form';
 @import 'accommodation';
+@import 'transport';
 
 .visually-hidden {
 	position: absolute !important;
@@ -19,7 +20,8 @@ body {
 
 .intro,
 .rsvp,
-.accommodation {
+.accommodation,
+.transport {
  	display: flex;
 	flex-direction: row;
 	flex-flow: wrap;
@@ -27,7 +29,8 @@ body {
 	min-height: 100vh;
 }
 
-.intro {
+.intro,
+.transport {
 	background: #fcdee0;
 }
 
@@ -39,6 +42,11 @@ body {
 
 .accommodation {
 	background: rgba(148, 161, 166, 1);
+	align-items: center;
+	justify-content: center;
+}
+
+.transport {
 	align-items: center;
 	justify-content: center;
 }

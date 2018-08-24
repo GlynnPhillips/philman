@@ -1,28 +1,28 @@
-.accommodation__heading {
+.transport__heading {
 	font-family: 'Big John', sans-serif;
-	color: #004c53;
+	color: #5f3e40;
 	font-size: 42px;
 	letter-spacing: 0.1em;
 	margin-bottom: 0;
 }
 
-.accommodation__heading--small {
+.transport__heading--small {
 	font-family: 'Big John', sans-serif;
-	color: #004c53;
+	color: #5f3e40;
 	font-size: 18px;
 	letter-spacing: 0.1em;
 	margin-bottom: 0;
 	padding-top: 0.5em;
 }
 
-.accommodation__details {
+.transport__details {
 	font-family: 'Champagne Limousines', sans-serif;
-	color: #ffffff;
+	color: #005064;
 	font-size: 18px;
 	margin-top: 0;
 }
 
-.accommodation__link {
+.transport__link {
 	font-family: 'Champagne Limousines', sans-serif;
 	color: #004c53;
 	text-decoration: none;
@@ -31,7 +31,7 @@
 	border-bottom: 2px dashed;
 }
 
-.accommodation__link:hover {
+.transport__link:hover {
 	border-bottom: 2px solid;
 	cursor: pointer;
 }
