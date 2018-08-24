@@ -13,6 +13,7 @@
 		<link href="dist/main.css" type="text/css" rel="stylesheet">
 		<link rel="shortcut icon" href="dist/favicon.ico" type="image/x-icon">
 		<link rel="icon" href="dist/favicon.ico" type="image/x-icon">
+		<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.46.0/mapbox-gl.css' rel='stylesheet' />
 	</head>
 	<body>
 		<section class="intro">
@@ -25,10 +26,11 @@
 			</header>
 			<div class="intro__item details">
 				<h2 class="details__heading">Saturday 13th July 2019</h2>
-				<h2 class="details__heading">Nr. Summercourt, Cornwall</h2>
+				<h2 class="details__heading">Nr. Summercourt, Cornwall</h2> 
+				<p><a class="details__link" href="#rsvp">RSVP</a></p>
 				<p><a class="details__link" href="#accommodation">Places to stay</a></p>
 				<p><a class="details__link" href="#transport">Transport</a></p>
-				<a class="details__link" href="#rsvp">RSVP</a>
+				<p><a class="details__link" href="#map">Map</a></p>
 			</div>
 		</section>
 		<section class="rsvp" id="rsvp">
@@ -110,6 +112,20 @@
 				<p class="transport__details">The venue is only a short drive from Newquay airport which has about 3 flights a day to and from Gatwick. With flight times taking about 1hr 10 minutes.</p>
 			</div>
 		</section>
+		<section class="transport" id="map"></section>
 		<script src="dist/bundle.js" async=""></script>
+		<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.46.0/mapbox-gl.js'></script>
+		<script>
+				mapboxgl.accessToken = 'pk.eyJ1IjoiZ2x5bm5waGlsbGlwcyIsImEiOiJjams2eXhkZmUweXBkM3FrM3Vwb3phcmxqIn0.2hTFJAe4vzRLTsvkVhq7HQ';
+				const map = new mapboxgl.Map({
+				container: 'map',
+				style: 'mapbox://styles/glynnphillips/cjk795lf376tg2rscoi5jozg8',
+				center: [-5.0183967, 50.3862976],
+				zoom: 11.0
+				});
+
+				map.scrollZoom.disable();
+				map.dragPan.disable();
+</script>
 	</body>
 </html>

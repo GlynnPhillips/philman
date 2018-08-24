@@ -4,6 +4,11 @@
 @import 'accommodation';
 @import 'transport';
 
+.mapboxgl-canvas {
+	top: 0;
+	left: 0;
+}
+
 .visually-hidden {
 	position: absolute !important;
     height: 1px; width: 1px; 
@@ -27,6 +32,7 @@ body {
 	flex-flow: wrap;
 	width: 100%;
 	min-height: 100vh;
+	overflow: hidden;
 }
 
 .intro,
