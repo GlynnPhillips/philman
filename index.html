@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta property="og:title" content="Glynn & Holly are getting married" />
+		<meta property="og:site_name" content="Glynn & Holly" />
+		<meta property="og:type" content="website" />
+		<title>Glynn & Holly | 13th July 2019</title>
+		<link href="dist/main.css" type="text/css" rel="stylesheet">
+	</head>
+	<body>
+		<section class="intro">
+			<header class="intro__item">
+				<h1 class="intro__heading">
+					<span class="intro__heading--quick">Glynn</span>
+					<span class="intro__heading--contrast">&</span>
+					<span class="intro__heading--slow">Holly</span>
+				</h1>
+			</header>
+			<div class="intro__item details">
+				<h2 class="details__heading">Saturday 13th July 2019</h2>
+				<h2 class="details__heading">Nr. Summercourt, Cornwall</h2>
+				<p><a class="details__link" href="#accommodation">Places to stay</a></p>
+				<a class="details__link" href="#rsvp">RSVP</a>
+			</div>
+		</section>
+		<section class="rsvp" id="rsvp">
+			<div class="centered">
+			<h2 class="rsvp__heading">RSVP</h2>
+			<p class="rsvp__details">Please let us know by 13th May 2019</p>
+			<form name="rsvp" method="POST" class="rsvp__form" autocomplete="off" data-netlify="true" netlify-honeypot="sweet-container">
+
+				<label for="name" class="rsvp__label">Name</label>
+				<input class="rsvp__input" id="name" name="name" placeholder="Glynn & Holly" required/>
+				<fieldset class="rsvp__fieldset" data-component="rsvp">
+					<legend for="rsvp" class="rsvp__label">Are you joining us?</legend>
+						<input type="radio" name="rsvp" id="yes" class="rsvp__radio" required />
+						<label for="yes" class="rsvp__label--small">Hell yeah</label>
+						<input type="radio" name="rsvp" id="no" class="rsvp__radio" required />
+						<label for="no" class="rsvp__label--small">Sorry, no</label>
+				</fieldset>
+				<fieldset class="rsvp__fieldset hide" data-component="dietary">
+					<legend for="rsvp" class="rsvp__label">Any dietary requirements?</legend>
+					<input type="checkbox" name="veg" id="veg" class="rsvp__radio" />
+					<label for="veg" class="rsvp__label--small">Vegetarian</label>
+					<input type="checkbox" name="vegan" id="vegan" class="rsvp__radio" />
+					<label for="vegan" class="rsvp__label--small">Vegan</label>
+					<input type="checkbox" name="gf" id="gf" class="rsvp__radio"/>
+					<label for="gf" class="rsvp__label--small">Gluten Free</label>
+					<input type="checkbox" name="allergies" id="allergies" class="rsvp__radio" />
+					<label for="allergies" class="rsvp__label--small">Allergies</label>
+					<label for="other" class="rsvp__label--small rsvp__label--newline">Allergies details and other requirements</label>
+					<textarea name="other" id="other" class="rsvp__input rsvp__input--full"></textarea>
+				</fieldset>
+				<input name="sweet-container" class="visually-hidden" />
+
+				<input type="submit" class="rsvp__button" value="Send" />
+			</form>
+			</div>
+		</section>
+		
+		<section class="accommodation" id="accommodation">
+			<div class="centered">
+				<h2 class="accommodation__heading">Places to stay</h2>
+				<p class="accommodation__details">The area is a popular holiday destination and therefore the venue is surrounded by holiday homes, hotels &amp; campsites. We have included some of our favourites but you are welcome to stay anywhere that suits you.</p>
+				<h3 class="accommodation__heading--small">The plume of feathers</h3>
+				<p class="accommodation__details">A charming 16th century inn turned luxury B&amp;B country pub. Only 10 minutes from our venue by taxi.
+					<a href="https://theplumemitchell.co.uk/" class="accommodation__link">Book</a>
+				<h3 class="accommodation__heading--small">Stable Conversion (AirBnB)</h3>
+				<p class="accommodation__details">
+					A stunning 2 bedroom stable conversion with 2 double beds and a single.
+					<a href="https://www.airbnb.co.uk/rooms/5373456?location=Newquay&adults=4&check_in=2019-07-12&check_out=2019-07-14&s=Rl2oZYRq" class="accommodation__link">Book</a>
+				</p>
+				<h3 class="accommodation__heading--small">The Granary (AirBnB)</h3>
+				<p class="accommodation__details">
+					The Granary is a converted barn that sleeps 4 in a double room and a twin room.
+					<a href="https://www.airbnb.co.uk/rooms/23540996?location=Newquay&adults=4&check_in=2019-07-12&check_out=2019-07-14&s=nRzV1stm" class="accommodation__link">Book</a>
+				</p>
+				<h3 class="accommodation__heading--small">Premier Inn</h3>
+				<p class="accommodation__details">
+					There are 2 Premier Inn's close to the venue.
+					<a href="" class="accommodation__link">Book Premier Inn Quintrell Downs</a> or
+					<a href="" class="accommodation__link">Book Premier Inn Fraddon</a> 
+				</p>
+			</div>
+			<script src="dist/bundle.js" async=""></script>
+		</section>
+	</body>
+</html>

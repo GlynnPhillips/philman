@@ -1,0 +1,271 @@
+@keyframes fade-in {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes fade-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(350px); }
+  to {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@font-face {
+  font-family: 'Big John';
+  src: url(fonts/6bbb5036b692dcde5ab9956301e476c4.woff2) format("woff2"); }
+
+@font-face {
+  font-family: 'Champagne Limousines';
+  src: url(fonts/655101be8dd35c20079cf499b2328a23.woff2) format("woff2"); }
+
+.hide {
+  display: none; }
+
+.rsvp__form {
+  width: 100%; }
+
+.rsvp__fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0; }
+
+.rsvp__input {
+  font-family: 'Champagne Limousines', sans-serif;
+  width: 100%;
+  max-width: 50%;
+  border: 0;
+  background: rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+  font-size: 16px;
+  padding: 0.5em 0.25em; }
+
+.rsvp__input--full {
+  max-width: 100%; }
+
+.rsvp__input:focus {
+  outline: 0; }
+
+.rsvp__input::placeholder {
+  color: rgba(255, 255, 255, 0.5); }
+
+.rsvp__label {
+  font-family: 'Big John', sans-serif;
+  color: #ffffff;
+  font-size: 14px;
+  padding-right: 12px;
+  padding-top: 1.5em; }
+
+.rsvp__label--small {
+  font-family: 'Big John', sans-serif;
+  color: #ffffff;
+  font-size: 12px;
+  padding-right: 12px;
+  padding-top: 1.5em; }
+
+.rsvp__label--newline {
+  display: block;
+  padding-bottom: 0.25em; }
+
+.rsvp__radio {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: inline-block;
+  position: relative;
+  background: rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+  top: 10px;
+  height: 30px;
+  width: 30px;
+  border: 0;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-right: 7px;
+  outline: none; }
+
+.rsvp__radio:checked::before {
+  position: absolute;
+  font: 13px/1 'Open Sans', sans-serif;
+  left: 11px;
+  top: 7px;
+  content: '\2143';
+  transform: rotate(40deg); }
+
+.rsvp__radio:checked,
+.rsvp__radio:hover,
+.rsvp__radio:focus {
+  background: rgba(0, 0, 0, 0.4); }
+
+.rsvp__button {
+  font-family: 'Big John', sans-serif;
+  color: #004c53;
+  font-size: 16px;
+  background: #fcdee0;
+  border: 0;
+  padding: 0.5em 0.5em 0.25em;
+  margin-top: 1em; }
+
+.rsvp__button:hover {
+  cursor: pointer;
+  background: #ffffff; }
+
+.accommodation__heading {
+  font-family: 'Big John', sans-serif;
+  color: #004c53;
+  font-size: 42px;
+  letter-spacing: 0.1em;
+  margin-bottom: 0; }
+
+.accommodation__heading--small {
+  font-family: 'Big John', sans-serif;
+  color: #004c53;
+  font-size: 18px;
+  letter-spacing: 0.1em;
+  margin-bottom: 0; }
+
+.accommodation__details {
+  font-family: 'Champagne Limousines', sans-serif;
+  color: #ffffff;
+  font-size: 18px;
+  margin-top: 0; }
+
+.accommodation__link {
+  font-family: 'Champagne Limousines', sans-serif;
+  color: #004c53;
+  text-decoration: none;
+  font-size: 16px;
+  margin-top: 0;
+  border-bottom: 2px dashed; }
+
+.accommodation__link:hover {
+  border-bottom: 2px solid;
+  cursor: pointer; }
+
+.visually-hidden {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px); }
+
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden; }
+
+.intro,
+.rsvp,
+.accommodation {
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  width: 100%;
+  min-height: 100vh; }
+
+.intro {
+  background: #fcdee0; }
+
+.rsvp {
+  background: #004c53;
+  align-items: center;
+  justify-content: center; }
+
+.accommodation {
+  background: #94a1a6;
+  align-items: center;
+  justify-content: center; }
+
+.centered {
+  width: 80%; }
+
+@media (min-width: 46.25em) {
+  .centered {
+    width: 50%; } }
+
+.rsvp__heading {
+  font-family: 'Big John', sans-serif;
+  color: #ffffff;
+  font-size: 42px;
+  letter-spacing: 0.1em;
+  margin-bottom: 0; }
+
+.rsvp__details {
+  font-family: 'Champagne Limousines', sans-serif;
+  color: #ffffff;
+  font-size: 18px;
+  margin-top: 0; }
+
+.intro__item {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 240px; }
+
+.details {
+  padding: 30px;
+  animation: fade-in 1s; }
+
+.details__heading {
+  font-family: 'Big John', sans-serif;
+  color: #ffffff;
+  font-size: 24px; }
+
+.details__link {
+  font-family: 'Big John', sans-serif;
+  color: #ffffff;
+  font-size: 24px;
+  text-decoration: none;
+  border-bottom: dashed 2px; }
+
+.details__link:hover {
+  color: #004c53;
+  border-bottom: solid 2px; }
+
+.details__text {
+  font-family: 'Champagne Limousines', sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  margin: 0; }
+
+.intro__heading {
+  display: flexbox;
+  font-family: 'Big John', sans-serif;
+  color: #004c53;
+  font-size: 60px;
+  position: absolute;
+  right: 40px;
+  top: 30px;
+  width: 220px;
+  line-height: 0.9;
+  flex-wrap: wrap; }
+
+.intro__heading--quick {
+  display: inline-block;
+  animation: fade-in-right ease 0.8s forwards; }
+
+.intro__heading--slow {
+  display: inline-block;
+  animation: fade-in-right ease 1.2s forwards; }
+
+.intro__heading--contrast {
+  display: inline-block;
+  font-size: 150px;
+  font-family: 'Champagne Limousines', sans-serif;
+  margin-left: 100px;
+  margin-top: -8px;
+  animation: fade-in-right ease 1.5s forwards; }
+
+@media (min-width: 46.25em) {
+  .intro {
+    flex-direction: row-reverse; }
+  .intro__item {
+    width: 50%;
+    min-height: 240px; }
+  .intro__heading {
+    bottom: 30px;
+    top: auto; } }
+

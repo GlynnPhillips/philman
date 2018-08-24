@@ -1,14 +1,21 @@
 {
   "name": "Philman",
   "description": "A simple static site for our wedding",
+  "private": true,
   "repository": {
     "type": "git",
     "url": "https://github.com/glynnphillips/philman"
   },
-  "dependencies": {
-    "harp": "^0.27.0"
-  },
   "scripts": {
-    "build": "harp compile src public"
+    "build": "webpack"
+  },
+  "devDependencies": {
+    "css-loader": "^1.0.0",
+    "file-loader": "^1.1.11",
+    "mini-css-extract-plugin": "^0.4.1",
+    "node-sass": "^4.9.3",
+    "sass-loader": "^7.1.0",
+    "webpack": "^4.16.5",
+    "webpack-cli": "^3.1.0"
   }
 }
