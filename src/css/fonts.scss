@@ -1,9 +1,13 @@
 @font-face {
 	font-family: 'Big John';
-	src: url('fonts/big-john.woff2') format('woff2');
+	src: url('fonts/big-john.woff2') format('woff2'),
+		url('fonts/big-john.woff') format('woff'),
+		url('fonts/big-john.ttf') format('truetype');
 }
 
 @font-face {
 	font-family: 'Champagne Limousines';
- 	src: url('fonts/Champagne-&-Limousines.woff2') format('woff2');
+ 	src: url('fonts/Champagne-&-Limousines.woff2') format('woff2'),
+ 		url('fonts/Champagne-&-Limousines.woff') format('woff'),
+ 		url('fonts/Champagne-&-Limousines.ttf') format('truetype');
  }

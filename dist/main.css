@@ -14,11 +14,11 @@
 
 @font-face {
   font-family: 'Big John';
-  src: url(fonts/6bbb5036b692dcde5ab9956301e476c4.woff2) format("woff2"); }
+  src: url(fonts/6bbb5036b692dcde5ab9956301e476c4.woff2) format("woff2"), url(fonts/06f947be3e6c04d809f28d9df6dc9986.woff) format("woff"), url(fonts/6472387962deca906c2ef910cbbf28aa.ttf) format("truetype"); }
 
 @font-face {
   font-family: 'Champagne Limousines';
-  src: url(fonts/655101be8dd35c20079cf499b2328a23.woff2) format("woff2"); }
+  src: url(fonts/655101be8dd35c20079cf499b2328a23.woff2) format("woff2"), url(fonts/10ecfad1448516e3ad9b0fcb382013c7.woff) format("woff"), url(fonts/019e5d44b2e7bb331974dca0a343b271.ttf) format("truetype"); }
 
 .hide {
   display: none; }
