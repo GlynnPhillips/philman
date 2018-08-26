@@ -199,8 +199,14 @@ body {
 .rsvp,
 .accommodation,
 .transport {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -ms-flex-flow: wrap;
   flex-flow: wrap;
   width: 100%;
   min-height: 100vh;
@@ -212,16 +218,28 @@ body {
 
 .rsvp {
   background: #004c53;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center; }
 
 .accommodation {
   background: #94a1a6;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center; }
 
 .transport {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center; }
 
 .centered {
@@ -246,12 +264,14 @@ body {
 
 .intro__item {
   position: relative;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
   min-height: 240px; }
 
 .details {
   padding: 30px;
+  -webkit-animation: fade-in 1s;
   animation: fade-in 1s; }
 
 .details__heading {
@@ -286,15 +306,18 @@ body {
   top: 10px;
   width: 220px;
   line-height: 0.9;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin-top: 10px; }
 
 .intro__heading--quick {
   display: inline-block;
+  -webkit-animation: fade-in-right ease 0.8s forwards;
   animation: fade-in-right ease 0.8s forwards; }
 
 .intro__heading--slow {
   display: inline-block;
+  -webkit-animation: fade-in-right ease 1.2s forwards;
   animation: fade-in-right ease 1.2s forwards; }
 
 .intro__heading--contrast {
@@ -303,10 +326,14 @@ body {
   font-family: 'Champagne Limousines', sans-serif;
   margin-left: 100px;
   margin-top: -8px;
+  -webkit-animation: fade-in-right ease 1.5s forwards;
   animation: fade-in-right ease 1.5s forwards; }
 
 @media (min-width: 46.25em) {
   .intro {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
     flex-direction: row-reverse; }
   .intro__item {
     width: 50%;
