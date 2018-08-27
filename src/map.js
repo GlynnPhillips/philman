@@ -118,7 +118,7 @@ var geojson = [
 		},
 		properties: {
 			icon: {
-				className: 'named-marker',
+				className: 'map__marker',
         		html: 'Newquay', 
 				iconSize: [100, 20]  
 			}
@@ -132,7 +132,7 @@ var geojson = [
 		},
 		properties: {
 			icon: {
-				className: 'named-marker',
+				className: 'map__marker',
         		html: 'Summercourt', 
 				iconSize: [100, 20]  
 			}
@@ -146,7 +146,7 @@ var geojson = [
 		},
 		properties: {
 			icon: {
-				className: 'named-marker',
+				className: 'map__marker',
         		html: 'Truro', 
 				iconSize: [100, 20]  
 			}
@@ -160,7 +160,7 @@ var geojson = [
 		},
 		properties: {
 			icon: {
-				className: 'named-marker',
+				className: 'map__marker',
         		html: 'St. Ives', 
 				iconSize: [100, 20]  
 			}
@@ -174,7 +174,7 @@ var geojson = [
 		},
 		properties: {
 			icon: {
-				className: 'named-marker',
+				className: 'map__marker',
         		html: 'Liskeard', 
 				iconSize: [100, 20]  
 			}
