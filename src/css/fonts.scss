@@ -10,4 +10,19 @@
  	src: url('fonts/Champagne-&-Limousines.woff2') format('woff2'),
  		url('fonts/Champagne-&-Limousines.woff') format('woff'),
  		url('fonts/Champagne-&-Limousines.ttf') format('truetype');
- }
+}
+
+$heading-font: 'Big John', sans-serif;
+$body-font: 'Champagne Limousines', sans-serif;
+
+@mixin headingFont($color, $size) {
+	font-family: $heading-font;
+	color: $color;
+	font-size: $size;
+}
+
+@mixin bodyFont($color, $size) {
+	font-family: $body-font;
+	color: $color;
+	font-size: $size;
+}

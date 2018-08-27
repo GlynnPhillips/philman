@@ -1,13 +1,105 @@
+$primary-color: #fcdee0;
+$secondary-color: #004c53;
+
 @import 'animations';
 @import 'fonts';
 @import 'form';
-@import 'accommodation';
-@import 'transport';
 
-.mapboxgl-canvas {
-	top: 0;
-	left: 0;
+.section {
+ 	display: flex;
+	flex-direction: row;
+	flex-flow: wrap;
+	width: 100%;
+	min-height: 100vh;
+	overflow: hidden;
 }
+
+.section--intro,
+.section--transport {
+	background: $primary-color;
+}
+
+.section--rsvp {
+	background: $secondary-color;
+}
+
+.section--centered {
+	align-items: center;
+	justify-content: center;
+}
+
+.section--accommodation {
+	background: rgba(148, 161, 166, 1);
+}
+
+.section__heading {
+	@include headingFont(#ffffff, 42px);
+	letter-spacing: 0.1em;
+	margin-bottom: 0;
+}
+
+.section__heading--intro {
+	display: flexbox;
+	color: $secondary-color;
+	font-size: 60px;
+	position: absolute;
+	right: 40px;
+	top: 10px;
+	width: 220px;
+	line-height: 0.9;
+	flex-wrap: wrap;
+	margin-top: 10px;
+}
+
+.section__heading--accommodation {
+	color: $secondary-color;
+}
+
+.section__heading--transport {
+	color: #5f3e40;
+}
+
+.section__heading--small {
+	font-size: 18px;
+}
+
+.section__item {
+	position: relative;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 0 20px;
+	min-height: 240px;
+}
+
+.section__details {
+	font-family: $body-font;
+	color: #ffffff;
+	font-size: 18px;
+	margin-top: 0;
+}
+
+.section__details--transport {
+	color: #005064;
+}
+
+.section__link {
+	font-family: $body-font;
+	color: $secondary-color;
+	text-decoration: none;
+	font-size: 16px;
+	margin-top: 0;
+	border-bottom: 2px dashed;
+}
+
+.section__link:hover {
+	border-bottom: 2px solid;
+	cursor: pointer;
+}
+
+
+
+
+
 
 .visually-hidden {
 	position: absolute !important;
@@ -23,39 +115,6 @@ body {
  	overflow-x: hidden;
 }
 
-.intro,
-.rsvp,
-.accommodation,
-.transport {
- 	display: flex;
-	flex-direction: row;
-	flex-flow: wrap;
-	width: 100%;
-	min-height: 100vh;
-	overflow: hidden;
-}
-
-.intro,
-.transport {
-	background: #fcdee0;
-}
-
-.rsvp {
-	background: #004c53;
-	align-items: center;
-	justify-content: center;
-}
-
-.accommodation {
-	background: rgba(148, 161, 166, 1);
-	align-items: center;
-	justify-content: center;
-}
-
-.transport {
-	align-items: center;
-	justify-content: center;
-}
 
 .centered {
 	width: 80%;
@@ -67,27 +126,6 @@ body {
 	}
 }
 
-.rsvp__heading {
-	font-family: 'Big John', sans-serif;
-	color: #ffffff;
-	font-size: 42px;
-	letter-spacing: 0.1em;
-	margin-bottom: 0;
-}
-
-.rsvp__details {
-	font-family: 'Champagne Limousines', sans-serif;
-	color: #ffffff;
-	font-size: 18px;
-	margin-top: 0;
-}
-
-.intro__item {
-	position: relative;
-	box-sizing: border-box;
-	width: 100%;
-	min-height: 240px;
-}
 
 .details {
 	padding: 30px;
@@ -95,75 +133,64 @@ body {
 }
 
 .details__heading {
-	font-family: 'Big John', sans-serif;
-	color: #ffffff;
-	font-size: 24px;
+	@include headingFont(#ffffff, 24px);
 }
 
-.details__link {
-	font-family: 'Big John', sans-serif;
-	color: #ffffff;
-	font-size: 24px;
+.navigation__link {
+	@include headingFont(#ffffff, 24px);
 	text-decoration: none;
 	border-bottom: dashed 2px;
 }
 
-.details__link:hover {
-	color: #004c53;
+.navigation {
+	padding: 0;
+	list-style: none;
+}
+
+.navigation__item {
+	padding-bottom: 10px;
+}
+
+.navigation__link:hover {
+	color: $secondary-color;
 	border-bottom: solid 2px;
 }
 
 .details__text {
-	font-family: 'Champagne Limousines', sans-serif;
-	color: #ffffff;
-	font-size: 20px;
+	@include bodyFont(#ffffff, 20px);
 	margin: 0;
 }
 
-.intro__heading {
-	display: flexbox;
-	font-family: 'Big John', sans-serif;
-	color: #004c53;
-	font-size: 60px;
-	position: absolute;
-	right: 40px;
-	top: 10px;
-	width: 220px;
-	line-height: 0.9;
-	flex-wrap: wrap;
-	margin-top: 10px;
-}
-
-.intro__heading--quick {
+.section__heading--quick {
 	display: inline-block;
 	animation: fade-in-right ease 0.8s forwards;
 }
 
-.intro__heading--slow {
+.section__heading--slow {
 	display: inline-block;
 	animation: fade-in-right ease 1.2s forwards;
 }
 
-.intro__heading--contrast {
+.section__heading--contrast {
 	display: inline-block;
-	font-size: 150px;
-	font-family: 'Champagne Limousines', sans-serif;
+	@include bodyFont($secondary-color, 150px);
+	font-weight: 100;
 	margin-left: 100px;
 	margin-top: -8px;
 	animation: fade-in-right ease 1.5s forwards;
 }
 
 @media (min-width: 46.25em) {
-	.intro {
+	.section--intro {
 		flex-direction: row-reverse;
 	}
 	
-	.intro__item {
+	.section__item {
 		width: 50%;
 		min-height: 240px;
 	}
 
-	.intro__heading {
+	.section__heading {
 		bottom: 30px;
 		top: auto;
 	}

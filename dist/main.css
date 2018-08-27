@@ -111,75 +111,95 @@
   cursor: pointer;
   background: #ffffff; }
 
-.accommodation__heading {
-  font-family: 'Big John', sans-serif;
-  color: #004c53;
+.section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-flow: wrap;
+  flex-flow: wrap;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden; }
+
+.section--intro,
+.section--transport {
+  background: #fcdee0; }
+
+.section--rsvp {
+  background: #004c53; }
+
+.section--centered {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.section--accommodation {
+  background: #94a1a6; }
+
+.section__heading {
+  font-family: "Big John", sans-serif;
+  color: #ffffff;
   font-size: 42px;
   letter-spacing: 0.1em;
   margin-bottom: 0; }
 
-.accommodation__heading--small {
-  font-family: 'Big John', sans-serif;
+.section__heading--intro {
+  display: flexbox;
   color: #004c53;
-  font-size: 18px;
-  letter-spacing: 0.1em;
-  margin-bottom: 0;
-  padding-top: 0.5em; }
+  font-size: 60px;
+  position: absolute;
+  right: 40px;
+  top: 10px;
+  width: 220px;
+  line-height: 0.9;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-top: 10px; }
 
-.accommodation__details {
-  font-family: 'Champagne Limousines', sans-serif;
+.section__heading--accommodation {
+  color: #004c53; }
+
+.section__heading--transport {
+  color: #5f3e40; }
+
+.section__heading--small {
+  font-size: 18px; }
+
+.section__item {
+  position: relative;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 20px;
+  min-height: 240px; }
+
+.section__details {
+  font-family: "Champagne Limousines", sans-serif;
   color: #ffffff;
   font-size: 18px;
   margin-top: 0; }
 
-.accommodation__link {
-  font-family: 'Champagne Limousines', sans-serif;
+.section__details--transport {
+  color: #005064; }
+
+.section__link {
+  font-family: "Champagne Limousines", sans-serif;
   color: #004c53;
   text-decoration: none;
   font-size: 16px;
   margin-top: 0;
   border-bottom: 2px dashed; }
 
-.accommodation__link:hover {
+.section__link:hover {
   border-bottom: 2px solid;
   cursor: pointer; }
-
-.transport__heading {
-  font-family: 'Big John', sans-serif;
-  color: #5f3e40;
-  font-size: 42px;
-  letter-spacing: 0.1em;
-  margin-bottom: 0; }
-
-.transport__heading--small {
-  font-family: 'Big John', sans-serif;
-  color: #5f3e40;
-  font-size: 18px;
-  letter-spacing: 0.1em;
-  margin-bottom: 0;
-  padding-top: 0.5em; }
-
-.transport__details {
-  font-family: 'Champagne Limousines', sans-serif;
-  color: #005064;
-  font-size: 18px;
-  margin-top: 0; }
-
-.transport__link {
-  font-family: 'Champagne Limousines', sans-serif;
-  color: #004c53;
-  text-decoration: none;
-  font-size: 16px;
-  margin-top: 0;
-  border-bottom: 2px dashed; }
-
-.transport__link:hover {
-  border-bottom: 2px solid;
-  cursor: pointer; }
-
-.mapboxgl-canvas {
-  top: 0;
-  left: 0; }
 
 .visually-hidden {
   position: absolute !important;
@@ -195,53 +215,6 @@ body {
   margin: 0;
   overflow-x: hidden; }
 
-.intro,
-.rsvp,
-.accommodation,
-.transport {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -ms-flex-flow: wrap;
-  flex-flow: wrap;
-  width: 100%;
-  min-height: 100vh;
-  overflow: hidden; }
-
-.intro,
-.transport {
-  background: #fcdee0; }
-
-.rsvp {
-  background: #004c53;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center; }
-
-.accommodation {
-  background: #94a1a6;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center; }
-
-.transport {
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center; }
-
 .centered {
   width: 80%; }
 
@@ -249,96 +222,71 @@ body {
   .centered {
     width: 50%; } }
 
-.rsvp__heading {
-  font-family: 'Big John', sans-serif;
-  color: #ffffff;
-  font-size: 42px;
-  letter-spacing: 0.1em;
-  margin-bottom: 0; }
-
-.rsvp__details {
-  font-family: 'Champagne Limousines', sans-serif;
-  color: #ffffff;
-  font-size: 18px;
-  margin-top: 0; }
-
-.intro__item {
-  position: relative;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 100%;
-  min-height: 240px; }
-
 .details {
   padding: 30px;
   -webkit-animation: fade-in 1s;
   animation: fade-in 1s; }
 
 .details__heading {
-  font-family: 'Big John', sans-serif;
+  font-family: "Big John", sans-serif;
   color: #ffffff;
   font-size: 24px; }
 
-.details__link {
-  font-family: 'Big John', sans-serif;
+.navigation__link {
+  font-family: "Big John", sans-serif;
   color: #ffffff;
   font-size: 24px;
   text-decoration: none;
   border-bottom: dashed 2px; }
 
-.details__link:hover {
+.navigation {
+  padding: 0;
+  list-style: none; }
+
+.navigation__item {
+  padding-bottom: 10px; }
+
+.navigation__link:hover {
   color: #004c53;
   border-bottom: solid 2px; }
 
 .details__text {
-  font-family: 'Champagne Limousines', sans-serif;
+  font-family: "Champagne Limousines", sans-serif;
   color: #ffffff;
   font-size: 20px;
   margin: 0; }
 
-.intro__heading {
-  display: flexbox;
-  font-family: 'Big John', sans-serif;
-  color: #004c53;
-  font-size: 60px;
-  position: absolute;
-  right: 40px;
-  top: 10px;
-  width: 220px;
-  line-height: 0.9;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin-top: 10px; }
-
-.intro__heading--quick {
+.section__heading--quick {
   display: inline-block;
   -webkit-animation: fade-in-right ease 0.8s forwards;
   animation: fade-in-right ease 0.8s forwards; }
 
-.intro__heading--slow {
+.section__heading--slow {
   display: inline-block;
   -webkit-animation: fade-in-right ease 1.2s forwards;
   animation: fade-in-right ease 1.2s forwards; }
 
-.intro__heading--contrast {
+.section__heading--contrast {
   display: inline-block;
+  font-family: "Champagne Limousines", sans-serif;
+  color: #004c53;
   font-size: 150px;
-  font-family: 'Champagne Limousines', sans-serif;
+  font-weight: 100;
   margin-left: 100px;
   margin-top: -8px;
   -webkit-animation: fade-in-right ease 1.5s forwards;
   animation: fade-in-right ease 1.5s forwards; }
 
 @media (min-width: 46.25em) {
-  .intro {
+  .section--intro {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
     -ms-flex-direction: row-reverse;
     flex-direction: row-reverse; }
-  .intro__item {
+  .section__item {
     width: 50%;
     min-height: 240px; }
-  .intro__heading {
+  .section__heading {
     bottom: 30px;
     top: auto; } }
 
