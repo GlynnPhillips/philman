@@ -111,6 +111,14 @@
   cursor: pointer;
   background: #ffffff; }
 
+.named-marker {
+  text-transform: uppercase;
+  font-family: "Big John", sans-serif;
+  color: #004c53;
+  font-size: 16px;
+  letter-spacing: 0.1em;
+  text-shadow: -1px -1px 0 #fff,   1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff; }
+
 .section {
   display: -webkit-box;
   display: -ms-flexbox;

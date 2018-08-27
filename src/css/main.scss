@@ -5,6 +5,19 @@ $secondary-color: #004c53;
 @import 'fonts';
 @import 'form';
 
+
+.named-marker {
+	text-transform: uppercase;
+	@include headingFont(#004c53, 16px);
+	letter-spacing: 0.1em;
+	text-shadow:
+    -1px -1px 0 #fff,  
+    1px -1px 0 #fff,
+    -1px 1px 0 #fff,
+    1px 1px 0 #fff;
+}
+
+
 .section {
  	display: flex;
 	flex-direction: row;
