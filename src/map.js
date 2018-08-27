@@ -1,7 +1,10 @@
 L.mapbox.accessToken = 'pk.eyJ1IjoiZ2x5bm5waGlsbGlwcyIsImEiOiJjams2eXhkZmUweXBkM3FrM3Vwb3phcmxqIn0.2hTFJAe4vzRLTsvkVhq7HQ';
 
-var map = L.mapbox.map('map', 'mapbox.streets')
-  .setView([50.378687,-5.001103], 12);
+var map = L.mapbox.map('map', 'mapbox.streets', {
+	minZoom: 9,
+	zoom: 12,
+	center: [50.378687,-5.001103]
+})
 
 var styleLayer = L.mapbox.styleLayer('mapbox://styles/glynnphillips/cjlccjlsa695m2so58osa1c53')
     .addTo(map);
@@ -131,6 +134,48 @@ var geojson = [
 			icon: {
 				className: 'named-marker',
         		html: 'Summercourt', 
+				iconSize: [100, 20]  
+			}
+		}
+	},
+	{
+		type: 'Feature',
+		geometry: {
+			type: 'Point',
+			coordinates: [-5.050733, 50.262576]
+		},
+		properties: {
+			icon: {
+				className: 'named-marker',
+        		html: 'Truro', 
+				iconSize: [100, 20]  
+			}
+		}
+	},
+	{
+		type: 'Feature',
+		geometry: {
+			type: 'Point',
+			coordinates: [-5.480473, 50.213783]
+		},
+		properties: {
+			icon: {
+				className: 'named-marker',
+        		html: 'St. Ives', 
+				iconSize: [100, 20]  
+			}
+		}
+	},
+	{
+		type: 'Feature',
+		geometry: {
+			type: 'Point',
+			coordinates: [-4.465020, 50.454405]
+		},
+		properties: {
+			icon: {
+				className: 'named-marker',
+        		html: 'Liskeard', 
 				iconSize: [100, 20]  
 			}
 		}
