@@ -197,7 +197,7 @@ body {
   -ms-flex-pack: center;
   justify-content: center; }
   .section--centered .section__item {
-    width: 80%; }
+    width: 90%; }
     @media (min-width: 46.25em) {
       .section--centered .section__item {
         width: 50%; } }
