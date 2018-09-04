@@ -4,6 +4,6 @@ import "./rsvp-options.js";
 
 if ('serviceWorker' in navigator) {
 	window.addEventListener('load', function() {
-		navigator.serviceWorker.register('/dist/sw.js');
+		navigator.serviceWorker.register('/sw.js');
 	});
 }
