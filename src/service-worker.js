@@ -14,14 +14,11 @@ self.addEventListener('install', event => {
 });
 
 self.addEventListener('fetch', event => {
-	console.log(event)
 	if (event.request.url.startsWith(self.location.origin) && event.request.method === 'GET') {
 		event.respondWith(
 			caches.match(event.request).then(cachedResponse => {
-				if (cachedResponse) {
-					console.log('HERE')
-					return cachedResponse;
-				}
+				console.log('Cache response', cachedResponse)
+				return cachedResponse || fetch(event.request);
 			})
 		);
 	} else {
