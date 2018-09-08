@@ -1,6 +1,8 @@
+const cacheName = 'philman-sbFSLzlgDYtdiw==';
+
 self.addEventListener('install', event => {
 	event.waitUntil(
-		caches.open('wasson').then(cache => {
+		caches.open(cacheName).then(cache => {
 			return cache.addAll([
 				'/',
 				'index.html',
@@ -14,6 +16,22 @@ self.addEventListener('install', event => {
 			]);
 		})
 	);
+});
+
+
+self.addEventListener('activate', function(e) {
+	e.waitUntil(
+		caches.keys().then(function(keyList) {
+			return Promise.all(keyList.map(function(key) {
+				if (key !== cacheName) {
+					console.log('[ServiceWorker] Removing old cache', key);
+					return caches.delete(key);
+				}
+			}));
+		})
+	);
+
+	return self.clients.claim();
 });
 
 self.addEventListener('fetch', event => {

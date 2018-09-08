@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+echo "Running pre commit"
+randomString=`head -c 10 /dev/random | base64`
+sed -i "" "s/^const cacheName = 'philman-.*';/const cacheName = 'philman-${randomString}';/g" src/service-worker.js
+
+git add src/service-worker.js
+
