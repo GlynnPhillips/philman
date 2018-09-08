@@ -1,4 +1,4 @@
-const cacheName = 'philman-F+iHdiNG9xwQ0w==';
+const cacheName = 'philman-MDKCvJzS2P3nrA==';
 
 self.addEventListener('install', event => {
 	event.waitUntil(
@@ -14,20 +14,20 @@ self.addEventListener('install', event => {
 				'/dist/fonts/Champagne-&-Limousines.woff2',
 				'/dist/main.css'
 			]);
-		})
+		}).then(() => self.skipWaiting())
 	);
 });
 
 
-self.addEventListener('activate', function(e) {
-	e.waitUntil(
-		caches.keys().then(function(keyList) {
-			return Promise.all(keyList.map(function(key) {
+self.addEventListener('activate', event => {
+	event.waitUntil(
+		caches.keys().then(keyList => {
+			return Promise.all(keyList.map(key => {
 				if (key !== cacheName) {
 					console.log('[ServiceWorker] Removing old cache', key);
 					return caches.delete(key);
 				}
-			}));
+			})).then(() => console.log('New cache now ready'));
 		})
 	);
 
