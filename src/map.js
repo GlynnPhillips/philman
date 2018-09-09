@@ -13,7 +13,7 @@ const options = {
 	triggerPosition: viewportHeight + (viewportHeight / 2),
 	defaultPosition: {
 		minZoom: 9,
-		zoom: 12,
+		zoom: 11,
 		center: [50.378687,-5.001103]
 	},
 	style: 'mapbox://styles/glynnphillips/cjlccjlsa695m2so58osa1c53'

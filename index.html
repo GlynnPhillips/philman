@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -26,7 +26,7 @@
 			</header>
 			<nav class="section__item">
 				<h2 class="details__heading">Thirteenth 
-					<span class="details__heading--contrast details__heading--line-break">of</span> July <span class="details__heading--line-break">Twenty</span> <span class="details__heading--line-break">Nineteen</h2>
+					<span class="details__heading--contrast details__heading--line-break">of </span>July <span class="details__heading--line-break">Twenty</span> <span class="details__heading--line-break">Nineteen</h2>
 				<ul class="navigation">
 					<li class="navigation__item">
 						<a class="navigation__link" href="#rsvp">RSVP</a>
@@ -71,9 +71,11 @@
 					<label for="other" class="rsvp__label--small rsvp__label--newline">Allergies details and other requirements</label>
 					<textarea name="other" id="other" class="rsvp__input rsvp__input--full"></textarea>
 				</fieldset>
-				<input name="sweet-container" class="visually-hidden" />
 
-				<input type="submit" class="rsvp__button" value="Send" />
+				<label for="sweet-container" class="visually-hidden">Ignore this field</label>
+				<input name="sweet-container" id="sweet-container" class="visually-hidden" />
+
+				<button type="submit" class="rsvp__button">Send</button>
 			</form>
 			</div>
 		</section>

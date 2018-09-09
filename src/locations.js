@@ -69,9 +69,36 @@ module.exports = {
 					iconSize: [100, 20]  
 				}
 			}
+		},	
+		{
+			type: 'Feature',
+			geometry: {
+				type: 'Point',
+				coordinates: [-4.789151,50.338307]
+			},
+			properties: {
+				icon: {
+					className: 'map__marker',
+        			html: 'St. Austell', 
+					iconSize: [150, 20]  
+				}
+			}
 		}	
 	],
 	accommodationLocations: [
+		{
+			type: 'Feature',
+			geometry: {
+				type: 'Point',
+				coordinates: [-5.007850, 50.352774]
+			},
+			properties: {
+				title: 'The Plume of Feathers',
+				'marker-color': '#004c53',
+				'marker-size': 'medium',
+				'marker-symbol': 'village'
+			}
+		},
 		{
 			type: 'Feature',
 			geometry: {
@@ -174,6 +201,19 @@ module.exports = {
 			},
 			properties: {
 				title: 'Quintrell Downs Train Station',
+				'marker-color': '#004c53',
+				'marker-size': 'medium',
+				'marker-symbol': 'rail'
+			}
+		},
+		{
+			type: 'Feature',
+			geometry: {
+				type: 'Point',
+				coordinates: [-4.789259,50.339591]
+			},
+			properties: {
+				title: 'St. Austell Train Station',
 				'marker-color': '#004c53',
 				'marker-size': 'medium',
 				'marker-symbol': 'rail'

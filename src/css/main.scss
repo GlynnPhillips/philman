@@ -23,7 +23,7 @@ body {
 }
 
 .section--intro {
-	@media (min-width: 46.25em) {
+	@media (min-width: 42em) {
 		flex-direction: row-reverse;
 	}
 }
@@ -58,7 +58,7 @@ body {
 
 	.section__item {
 		width: 90%;	
-		@media (min-width: 46.25em) {
+		@media (min-width: 50em) {
 			width: 50%;
 		}
 	}
@@ -71,7 +71,7 @@ body {
 	width: 100%;
 	padding: 0 20px;
 	min-height: 240px;
-	@media (min-width: 46.25em) {
+	@media (min-width: 42em) {
 		width: 50%;
 		min-height: 240px;
 	}
@@ -82,7 +82,7 @@ body {
 	letter-spacing: 0.1em;
 	margin-bottom: 0;
 	
-	@media (min-width: 46.25em) {
+	@media (min-width: 42em) {
 		font-size: 42px;
 	}
 }
