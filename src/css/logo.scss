@@ -4,17 +4,20 @@
 	display: flex;
 	flex-wrap: wrap;
 	position: absolute;
-	right: 40px;
 	top: 10px;
+	left: 20px;
 	@include headingFont($secondary-color, 60px);
 	letter-spacing: 0.1em;
 	width: 220px;
 	line-height: 0.9;
-	margin: 10px 0;
+	margin: 10px 0 40px;
 
 	@media (min-width: 46.25em) {
 		bottom: 30px;
 		top: auto;
+		right: 40px;
+		left: auto;
+		margin: 10px 0;
 	}
 }
 

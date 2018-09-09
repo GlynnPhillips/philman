@@ -127,11 +127,21 @@ body {
 }
 
 .details__heading {
-	@include headingFont(#ffffff, 24px);
+	@include headingFont($secondary-color, 34px);
+	letter-spacing: 0.06em;
+}
+
+.details__heading--contrast {
+	@include bodyFont($secondary-color, 34px);
+}
+
+.details__heading--line-break:before {
+	content: "";
+	display: block;
 }
 
 .navigation__link {
-	@include headingFont(#ffffff, 24px);
+	@include headingFont($tertiary-color, 24px);
 	text-decoration: none;
 	border-bottom: dashed 2px;
 }
@@ -158,7 +168,7 @@ body {
 .map__marker {
 	text-transform: uppercase;
 	@include headingFont($secondary-color, 16px);
-	letter-spacing: 0.1em;
+	letter-spacing: 0.06em;
 	text-shadow:
     -1px -1px 0 #fff,  
     1px -1px 0 #fff,
