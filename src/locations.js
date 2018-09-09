@@ -103,10 +103,23 @@ module.exports = {
 			type: 'Feature',
 			geometry: {
 				type: 'Point',
-				coordinates: [-5.042541, 50.382838]
+				coordinates: [-5.042802, 50.419914]
 			},
 			properties: {
-				title: 'The Granary',
+				title: 'The Crantock Suite',
+				'marker-color': '#004c53',
+				'marker-size': 'medium',
+				'marker-symbol': 'village'
+			}
+		},
+		{
+			type: 'Feature',
+			geometry: {
+				type: 'Point',
+				coordinates: [-5.053714,50.424506]
+			},
+			properties: {
+				title: 'The Beach Apartment',
 				'marker-color': '#004c53',
 				'marker-size': 'medium',
 				'marker-symbol': 'village'
