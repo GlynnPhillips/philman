@@ -1,6 +1,11 @@
+.section--pattern:after {
+	content: '';
+	background: $primary-color url('../images/house-illustration.png') !important;
+}
+
 .section__inner {
 	display: grid;
-	grid-template-columns: 2fr 2fr; 
+	grid-template-columns: 2fr 2fr 2fr 2fr; 
 	grid-gap: 100px 40px;
 	align-items: center;
 	box-sizing: border-box;
@@ -10,6 +15,7 @@
 	
 	@media (min-width: 42em) {
 		width: 75%;
+		grid-auto-flow: auto;
 	}
 }
 
@@ -17,17 +23,23 @@
 	margin: 0;
 	width: 100% !important;
 	height: auto !important;
-	grid-column: 1 / span 2;
+	grid-column: 1 / span 4;
 }
 
 .block--left {
 	@media (min-width: 42em) {
-		grid-column: 1 / span 1;
+		grid-column: 1 / span 2;
 	}
 }
 
 .block--right {
 	@media (min-width: 42em) {
-		grid-column: 2 / span 2;
+		grid-column: 3 / span 2;
+	}
+}
+
+.block--gallery {
+	@media (min-width: 42em) {
+		grid-column: span 2
 	}
 }
