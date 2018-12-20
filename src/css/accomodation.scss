@@ -31,10 +31,3 @@
 		grid-column: 2 / span 2;
 	}
 }
-
-.photo__caption {
-	@include headingFont(#ffffff, 24px);
-	position: absolute;
-	right: 5px;
-	bottom: 5px;
-}

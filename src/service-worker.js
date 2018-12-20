@@ -1,4 +1,4 @@
-const cacheName = 'philman-aJS8BEGBMwp0Kg==';
+const cacheName = 'philman-MyqiCmx0xlDf6w==';
 
 self.addEventListener('install', event => {
 	event.waitUntil(
