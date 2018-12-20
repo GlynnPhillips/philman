@@ -6,6 +6,7 @@
 	box-sizing: border-box;
 	width: 100%;
 	padding: 50px 20px;
+	grid-auto-flow: dense;
 	
 	@media (min-width: 42em) {
 		width: 75%;
@@ -16,14 +17,19 @@
 	margin: 0;
 	width: 100% !important;
 	height: auto !important;
+	grid-column: 1 / span 2;
 }
 
 .block--left {
-	grid-column: 1 / span 1;
+	@media (min-width: 42em) {
+		grid-column: 1 / span 1;
+	}
 }
 
 .block--right {
-	grid-column: 2 / span 2;
+	@media (min-width: 42em) {
+		grid-column: 2 / span 2;
+	}
 }
 
 .photo__caption {
