@@ -167,15 +167,35 @@ body {
 	margin: 0;
 }
 
-.map__tresillian {
-	background: url(https://www.glynnandholly.info/images/tresillian-house.png);
-	background-size: 50px;
+.map__tresillian:before {
+	content: '';
+	display: block;
+	width: 110px;
+	height: 30px;
+	position: absolute;
+	top: -30px;
+	left: 0;
+	background: url('https://www.glynnandholly.info/images/tresillian-house.svg');
 	background-repeat: no-repeat;
+	background-size: 50px;
+	background-position: 50%;
+}
+
+.map__tresillian {
+	text-transform: uppercase;
+	text-align: center;
+	@include headingFont($secondary-color, 16px);
+	letter-spacing: 0.06em;
+	text-shadow:
+    -1px -1px 0 #fff,  
+    1px -1px 0 #fff,
+    -1px 1px 0 #fff,
+    1px 1px 0 #fff;
 }
 
 .map__marker {
 	text-transform: uppercase;
-	@include headingFont($secondary-color, 16px);
+	@include headingFont($secondary-color, 13px);
 	letter-spacing: 0.06em;
 	text-shadow:
     -1px -1px 0 #fff,  

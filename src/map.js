@@ -52,7 +52,7 @@ const loadMap = () => {
 				}
 			})
 			.setGeoJSON(townLocations
-				.concat(tresillianLocation, accommodationLocations, pointsOfInterest));
+				.concat(tresillianLocation, pointsOfInterest));
 
 		map.dragging.disable()
 		map.scrollWheelZoom.disable()

@@ -8,12 +8,10 @@ module.exports = {
 			},
 			properties: {
 				icon: {
-        			iconSize: [50, 50],
-        			iconAnchor: [25, 25],
-        			popupAnchor: [0, -25],
-        			className: 'map__tresillian'
-				},
-				title: 'Tresillian House'
+					className: 'map__tresillian',
+        			html: 'Tresillian House', 
+					iconSize: [110, 20]  
+				}
 			}
 		}
 	],
@@ -36,27 +34,13 @@ module.exports = {
 			type: 'Feature',
 			geometry: {
 				type: 'Point',
-				coordinates: [-4.969353, 50.366004]
-			},
-			properties: {
-				icon: {
-					className: 'map__marker',
-        			html: 'Summercourt', 
-					iconSize: [100, 20]  
-				}
-			}
-		},
-		{
-			type: 'Feature',
-			geometry: {
-				type: 'Point',
 				coordinates: [-5.050733, 50.262576]
 			},
 			properties: {
 				icon: {
 					className: 'map__marker',
         			html: 'Truro', 
-					iconSize: [100, 20]  
+					iconSize: [120, 20]  
 				}
 			}
 		},
@@ -209,6 +193,19 @@ module.exports = {
 				'marker-color': '#004c53',
 				'marker-size': 'medium',
 				'marker-symbol': 'airport'
+			}
+		},
+		{
+			type: 'Feature',
+			geometry: {
+				type: 'Point',
+				coordinates: [-5.064639, 50.263957]
+			},
+			properties: {
+				title: 'Truro Train Station',
+				'marker-color': '#004c53',
+				'marker-size': 'medium',
+				'marker-symbol': 'rail'
 			}
 		},
 		{
