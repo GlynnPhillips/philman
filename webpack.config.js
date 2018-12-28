@@ -7,7 +7,8 @@ module.exports = {
     sw: "./src/service-worker.js"
   },
   output: {
-    path: path.resolve(__dirname)
+    path: path.resolve(__dirname),
+    publicPath: '../'
   },
   plugins: [
     new MiniCssExtractPlugin({})
@@ -48,11 +49,11 @@ module.exports = {
       {
         test: /\.(png|jp(e*)g|svg)$/,
           use: [{
-            loader: 'file-loader',
+            loader: 'url-loader',
             options: {
               limit: 8000, // Convert images < 8kb to base64 strings
               name: '[name].[ext]',
-              outputPath: './images'
+              outputPath: './dist/images'
             }
           }]
         }

@@ -4,7 +4,7 @@ module.exports = {
 			type: 'Feature',
 			geometry: {
 				type: 'Point',
-				coordinates: [-5.020140, 50.386519]
+				coordinates: [-5.018260, 50.380117]
 			},
 			properties: {
 				icon: {
@@ -34,7 +34,7 @@ module.exports = {
 			type: 'Feature',
 			geometry: {
 				type: 'Point',
-				coordinates: [-5.050733, 50.262576]
+				coordinates: [-5.040000, 50.256576]
 			},
 			properties: {
 				icon: {
@@ -76,7 +76,7 @@ module.exports = {
 			type: 'Feature',
 			geometry: {
 				type: 'Point',
-				coordinates: [-4.789151,50.338307]
+				coordinates: [-4.759151, 50.333999]
 			},
 			properties: {
 				icon: {
