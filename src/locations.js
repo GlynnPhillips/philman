@@ -1,4 +1,22 @@
 module.exports = {
+	tresillianLocation: [
+		{
+			type: 'Feature',
+			geometry: {
+				type: 'Point',
+				coordinates: [-5.020140, 50.386519]
+			},
+			properties: {
+				icon: {
+        			iconSize: [50, 50],
+        			iconAnchor: [25, 25],
+        			popupAnchor: [0, -25],
+        			className: 'map__tresillian'
+				},
+				title: 'Tresillian House'
+			}
+		}
+	],
 	townLocations: [
 		{
 			type: 'Feature',

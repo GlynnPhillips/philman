@@ -1,4 +1,5 @@
 import {
+	tresillianLocation,
 	townLocations,
 	accommodationLocations,
 	pointsOfInterest
@@ -40,12 +41,6 @@ const loadMap = () => {
 		mapbox.styleLayer('mapbox://styles/glynnphillips/cjlccjlsa695m2so58osa1c53')
 			.addTo(map);
 		
-			
-		L.circle([50.378687,-5.001103], 1500, {
-			color: '#004c53',
-			fill: '#004c53'
-		}).addTo(map);
-		
 		mapbox.featureLayer()
 			.addTo(map)
 			.on('layeradd', (event) => {
@@ -57,7 +52,7 @@ const loadMap = () => {
 				}
 			})
 			.setGeoJSON(townLocations
-				.concat(accommodationLocations, pointsOfInterest));
+				.concat(tresillianLocation, accommodationLocations, pointsOfInterest));
 
 		map.dragging.disable()
 		map.scrollWheelZoom.disable()

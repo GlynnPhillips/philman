@@ -167,6 +167,12 @@ body {
 	margin: 0;
 }
 
+.map__tresillian {
+	background: url(https://www.glynnandholly.info/images/tresillian-house.png);
+	background-size: 50px;
+	background-repeat: no-repeat;
+}
+
 .map__marker {
 	text-transform: uppercase;
 	@include headingFont($secondary-color, 16px);
