@@ -15,6 +15,7 @@ body {
 }
 
 .section {
+	position: relative;
  	display: flex;
 	flex-direction: row;
 	flex-flow: wrap;
@@ -28,6 +29,21 @@ body {
 	@media (min-width: 42em) {
 		flex-direction: row-reverse;
 	}
+}
+
+.section--pattern:before {
+	content: '';
+    background-size: 100px;
+    background-image: url(../images/tresillian-house.svg);
+    background-size: 100px;
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    top: -50%;
+    left: -50%;
+    z-index: 1;
+    transform: rotate(320deg);
+	opacity: 0.8;
 }
 
 .section--primary {
@@ -60,11 +76,16 @@ body {
 
 	.section__item {
 		width: 90%;	
+		z-index: 2;
 		@media (min-width: 50em) {
 			width: 50%;
 		}
 	}
 
+}
+
+.section__item--primary {
+	background: $primary-color;
 }
 
 .section__item {
@@ -92,6 +113,10 @@ body {
 
 .section__heading--small {
 	font-size: 18px;
+}
+
+.section__body--bold {
+	font-weight: 600;
 }
 
 .section__body {
