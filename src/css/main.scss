@@ -82,6 +82,19 @@ body {
 		}
 	}
 
+	.section__item--wide {
+		width: 100%;	
+		@media (min-width: 50em) {
+			width: 65%;
+		}
+	}
+}
+
+.flex {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-center;
+	align-items: center;
 }
 
 .section__item--primary {

@@ -3,7 +3,30 @@
 }
 
 .rsvp__form {
+	width: 90%;
+}
+
+
+.fullwidth {
 	width: 100%;
+	@media (min-width: 40em) {
+		width: 65%;
+	}
+}
+
+.rsvp__photo {
+	width: 55%;
+	height: 55%;
+	margin: 40px auto;
+	@media (min-width: 50em) {
+		width: 35%;
+		height: 35%;
+		margin-top: 20px;
+	}
+	@media (min-width: 70em) {
+		width: 25%;
+		height: 25%;
+	}
 }
 
 .rsvp__fieldset {
