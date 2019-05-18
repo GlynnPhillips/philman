@@ -149,6 +149,11 @@ body {
 	border-bottom: 2px dashed;
 }
 
+.section__link--secondary {
+	font-family: $body-font;
+	color: $primary-color;
+}
+
 .section__link:hover {
 	border-bottom: 2px solid;
 	cursor: pointer;
