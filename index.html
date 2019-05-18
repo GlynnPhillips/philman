@@ -29,9 +29,6 @@
 					<span class="details__heading--contrast details__heading--line-break">of </span>July <span class="details__heading--line-break">Twenty</span> <span class="details__heading--line-break">Nineteen</h2>
 				<ul class="navigation">
 					<li class="navigation__item">
-						<a class="navigation__link" href="#rsvp">RSVP</a>
-					</li>
-					<li class="navigation__item">
 						<a class="navigation__link" href="https://prezola.com/wishlists/10203512/">Gift list</a>
 					</li>
 					<li class="navigation__item">
@@ -46,47 +43,6 @@
 				</ul>
 			</nav>
 		</section>
-		<section class="section section--secondary section--centered" id="rsvp">
-			<div class="section__item section__item--wide flex">
-				<div class="fullwidth">
-					<h2 class="section__heading">RSVP</h2>
-					<p class="section__body">Please let us know if you can make it by 13th April 2019.</p>
-					<form name="rsvp" method="POST" class="rsvp__form" autocomplete="off" data-netlify="true" netlify-honeypot="yummy">
-
-						<label for="name" class="rsvp__label">Name</label>
-						<input class="rsvp__input" id="name" name="name" placeholder="eg. Glynn & Holly" required/>
-						<fieldset class="rsvp__fieldset" data-component="rsvp">
-							<legend for="rsvp" class="rsvp__label">Are you joining us?</legend>
-								<input type="radio" name="rsvp" id="yes" value="Hell yeah" class="rsvp__radio" required />
-								<label for="yes" class="rsvp__label--small">Hell yeah</label>
-
-								<input type="radio" name="rsvp" id="no" value="Sorry, no" class="rsvp__radio" required />
-								<label for="no" class="rsvp__label--small">Sorry, no</label>
-						</fieldset>
-						<fieldset class="rsvp__fieldset" data-component="dietary">
-							<legend for="rsvp" class="rsvp__label">Any dietary requirements?</legend>
-							<input type="checkbox" name="veg" id="veg" class="rsvp__radio" />
-							<label for="veg" class="rsvp__label--small">Vegetarian</label>
-							<input type="checkbox" name="vegan" id="vegan" class="rsvp__radio" />
-							<label for="vegan" class="rsvp__label--small">Vegan</label>
-							<input type="checkbox" name="gf" id="gf" class="rsvp__radio"/>
-							<label for="gf" class="rsvp__label--small">Gluten Free</label>
-							<input type="checkbox" name="allergies" id="allergies" class="rsvp__radio" />
-							<label for="allergies" class="rsvp__label--small">Allergies</label>
-							<label for="other" class="rsvp__label--small rsvp__label--newline">Allergies details and other requirements</label>
-							<textarea name="other" id="other" class="rsvp__input rsvp__input--full"></textarea>
-						</fieldset>
-
-						<label for="yummy" class="visually-hidden">Ignore this field</label>
-						<input name="yummy" id="yummy" class="visually-hidden" />
-
-						<button type="submit" class="rsvp__button">Send</button>
-					</form>
-				</div>
-				<img src="images/glynn-holly.png" class="rsvp__photo" />
-			</div>
-		</section>
-		
 		<section class="section section--primary section--centered" id="day">
 			<div class="section__item section__item--primary">
 				<h2 class="section__heading section__heading--transport">The big day</h2>
